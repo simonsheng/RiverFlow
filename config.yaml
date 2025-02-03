@@ -1,0 +1,17 @@
+adaptor:
+  type: "File"
+  input_path: "data/input.txt"
+  output_path: "data/output.txt"
+
+filter:
+  type: "DataFilter"
+  criteria: "int(line.strip()) > 100"
+
+transformer:
+  type: "DataTransformer"
+  operation: "multiply"
+  factor: 2
+
+partition:
+  type: "Partition"
+  num_threads: 4
