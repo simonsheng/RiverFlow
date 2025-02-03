@@ -35,6 +35,7 @@ RiverFlow is a flow management tool written in Python. It consists of multiple c
 - Transformer: Reshapes the data.
 - Engine: Orchestrates the workflow.
 - Partition: Divides the workflow into partitions to enable multi-threading.
+- Scheduler: Scheduler a task
 
 Configuration
 The project is configurable using a YAML configuration file. This file specifies:
